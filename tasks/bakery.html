@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAKE HOUSE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #faf7f2;
+    color: #4b3628;
+}
+
+header {
+    background: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #654832;
+    font-family: 'Arial Black', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b3628;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a98261;
+}
+.code {
+    background-color: #5a2e20;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+    .hero {
+    background: #eee4d6;
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.hero p {
+    line-height: 1.8;
+    color: #786453;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 55%;
+    min-width: 260px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: #654832;
+    color: white;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #92704f;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+.title {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #8c7967;
+    margin-bottom: 35px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #eee4d6;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #8c7967;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #654832;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.offer {
+    background: #654832;
+    color: white;
+    text-align: center;
+    padding: 45px 15px;
+}
+
+.offer h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.offer p {
+    margin-bottom: 22px;
+    line-height: 1.8;
+}
+
+.offer .btn {
+    background: #faf7f2;
+    color: #654832;
+}
+
+.custom {
+    background: #eee4d6;
+    text-align: center;
+}
+
+.custom p {
+    max-width: 650px;
+    margin: 18px auto 25px;
+    line-height: 1.9;
+    color: #786453;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+}
+
+.contact {
+    background: white;
+    text-align: center;
+    line-height: 2.2;
+}
+
+.contact p {
+    color: #786453;
+    font-size: 14px;
+}
+
+footer {
+    background: #4b3628;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BAKE HOUSE.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#custom">Custom Cakes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<marquee class="code" direction="right" scrollamount="10">
+    Enjoy 15% OFF your first order at BAKE HOUSE! Use code: SWEET15
+</marquee>
+<div class="hero" id="home">
+    <div class="hero-text">
+        <p>FRESHLY BAKED WITH LOVE</p>
+
+        <h1>A Little Sweetness<br>in Every Moment.</h1>
+
+        <p>
+            Discover freshly baked cakes, delicious pastries
+            and handmade cookies, crafted to make every
+            occasion a little more special.
+        </p>
+
+        <a href="#menu" class="btn">EXPLORE OUR MENU →</a>
+    </div>
+
+    <img
+    src="https://i.pinimg.com/736x/0d/73/12/0d73126bf2ac8a12353e246a0b019abb.jpg?auto=format&fit=crop&w=900&q=100"
+    alt="Chocolate celebration cake">
+</div>
+
+<section id="menu">
+    <h2 class="title">Our Bestsellers</h2>
+    <p class="subtitle">Freshly made favourites from our bakery.</p>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://www.rozanabakery.in/cdn/shop/files/lotus_biscoff_cheese_cake.png?v=1778063246&w=600&q=80"
+            alt="Lotus Biscoff Cheesecake">
+
+            <div class="info">
+                <h3>Lotus Biscoff Cheesecake</h3>
+                <p>A delightful blend of lotus and biscoff flavours in a creamy cheesecake.</p>
+                <span class="price">₹899</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/d3/b5/e5/d3b5e5ce8cc4c139fe15b469985ff06b.jpg?auto=format&fit=crop&w=600&q=80"
+            alt="Strawberry choco dip">
+
+            <div class="info">
+                <h3>Strawberry Chocolate Dip</h3>
+                <p>Delicious strawberries dipped in rich chocolate.</p>
+                <span class="price">₹249</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/92/ed/43/92ed430a8de92e6b97f35e8237c395fd.jpg?auto=format&fit=crop&w=600&q=80"
+            alt="Chocolate-Filled Sugar Donuts">
+
+            <div class="info">
+                <h3>Chocolate-Filled Sugar Donuts</h3>
+                <p>Delicious, fluffy sugar-coated donuts filled with rich, creamy chocolate! </p>
+                <span class="price">₹399</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/8c/fe/f9/8cfef9ee6c9017f38c166813d2a277bc.jpg?auto=format&fit=crop&w=600&q=80"
+            alt="Chocolate chip cookies">
+
+            <div class="info">
+                <h3>Chocolate Cookies</h3>
+                <p>Golden cookies filled with chocolate chips.</p>
+                <span class="price">₹199</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="offer">
+    <h2>A Treat Worth Celebrating!</h2>
+    <p>Enjoy 15% OFF your first order at BAKE HOUSE.</p>
+    <a href="#custom" class="btn">DISCOVER MORE</a>
+</div>
+
+<section class="custom" id="custom">
+    <h2 class="title">Custom Cakes, Made With Love</h2>
+
+    <p>
+        From birthday surprises to elegant wedding cakes,
+        we turn your sweetest ideas into beautiful creations.
+        Choose your favourite flavours, colours and designs
+        to make your celebration truly yours.
+    </p>
+
+    <a href="#contact" class="btn">ENQUIRE NOW</a>
+</section>
+
+<section id="gallery">
+    <h2 class="title">Our Gallery</h2>
+    <p class="subtitle">A glimpse of our freshly baked creations.</p>
+
+    <div class="gallery">
+        <img src="https://i.pinimg.com/736x/80/75/29/80752952afded3b566677838ba839337.jpg?auto=format&fit=crop&w=600&q=80"
+        alt="Red velvet cake">
+
+        <img src="https://i.pinimg.com/736x/81/55/06/81550641707a13852d762030d92503c7.jpg?auto=format&fit=crop&w=600&q=80"
+        alt="Cupcakes with sprinkles">
+
+        <img src="https://i.pinimg.com/736x/bb/b8/fa/bbb8fa122407de1c929ddda5f5a81430.jpg?auto=format&fit=crop&w=600&q=80"
+        alt="Macarons">
+
+        <img src="https://i.pinimg.com/1200x/c9/f0/14/c9f014e078ff2fa631afdba375d13eb1.jpg?auto=format&fit=crop&w=600&q=80"
+        alt="Croissants">
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="title">Visit BAKE HOUSE</h2>
+
+    <p>Address: Main Street, Vijayawada, Andhra Pradesh</p>
+    <p>Phone: +91 98765 75689</p>
+    <p>Email: hello@bakehouse.com</p>
+    <p>Opening Hours: Every Day, 9 AM - 9 PM</p>
+
+    <br>
+
+    <a href="mailto:hello@bakehouse.com" class="btn">
+        CONTACT US
+    </a>
+</section>
+
+<footer>
+    <p>BAKE HOUSE. | Freshly Baked, Always Loved.</p>
+    <p>© 2026 BAKE HOUSE. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
